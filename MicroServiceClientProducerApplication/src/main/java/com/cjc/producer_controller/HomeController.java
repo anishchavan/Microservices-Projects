@@ -22,6 +22,7 @@ public class HomeController {
 	@PostMapping("/postdatapro")
 	public Student postData(@RequestBody Student st) {
 		Student student = si.saveData(st); 
+		System.out.println("Data posted successfully");
 		return student;
 	}
 	
